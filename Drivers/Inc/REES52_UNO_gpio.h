@@ -1,3 +1,6 @@
+#ifndef REES52_UNO_GPIO_H
+#define REES52_UNO_GPIO_H
+
 #include "atmega328p.h"
 
 // Pin Number
@@ -9,7 +12,6 @@
 #define PIN5 5
 #define PIN6 6
 #define PIN7 7
-
 
 // API Function Prototypes
 void GPIO_InputPort(GPIO_RegDef_t *pGPIOx);
@@ -31,3 +33,5 @@ void Deactivate_Pin_Pullup(GPIO_RegDef_t *pGPIOx, uint8_t pinNumber);
 // Toggle the values of a GPIO Pin or Port irrespective of value of DDRnx/DDRx.
 void GPIO_ToggleOutputPin(GPIO_RegDef_t *pGPIOx, uint8_t pinNumber);
 void GPIO_ToggleOutputPort(GPIO_RegDef_t *pGPIOx);
+
+#endif // REES52_UNO_GPIO_H

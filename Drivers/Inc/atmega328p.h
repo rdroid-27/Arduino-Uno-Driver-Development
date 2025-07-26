@@ -1,3 +1,6 @@
+#ifndef ATMEGA328P_H
+#define ATMEGA328P_H
+
 #include <stdint.h>
 
 // General Macros
@@ -61,5 +64,8 @@ typedef struct
 #define PCMSK1  (*(volatile uint8_t *)PCMSK1_BaseAddr)
 #define PCMSK0  (*(volatile uint8_t *)PCMSK0_BaseAddr)
 
+
 #include "REES52_UNO_gpio.h"
-#include "REES52_UNO_s.h"
+#include "REES52_UNO_spi.h"
+
+#endif // ATMEGA328P_H

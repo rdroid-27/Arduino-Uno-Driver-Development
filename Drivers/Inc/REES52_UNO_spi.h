@@ -1,3 +1,6 @@
+#ifndef REES52_UNO_SPI_H
+#define REES52_UNO_SPI_H
+
 #include "atmega328p.h"
 
 // SPI Macros
@@ -53,6 +56,8 @@ void SPI_SendData(SPI_RegDef_t *pSPI, uint8_t *pTxBuffer, uint32_t len);
 // Receives data using the SPI peripheral in blocking mode
 void SPI_RecieveData(SPI_RegDef_t *pSPI, uint8_t *pRxBuffer, uint32_t len);
 
+void SPI_TransmitReceive(SPI_RegDef_t *pSPI, uint8_t *pTxBuffer, uint8_t *pRxBuffer, uint32_t len);
+
 // Enables or disables the interrupt for the given SPI IRQ number
 void SPI_IRQInterruptConfig(uint8_t IRQNumber, uint8_t ENorDI);
 
@@ -62,3 +67,4 @@ void SPI_IRQPriorityConfig(uint32_t IRQPriority, uint8_t IRQNumber);
 // Handles the SPI interrupt and clears the flags
 void SPI_IRQHandling(SPI_Handle_t *pSPIHandle);
 
+#endif // REES52_UNO_SPI_H
