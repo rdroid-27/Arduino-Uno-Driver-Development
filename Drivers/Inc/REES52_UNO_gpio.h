@@ -10,8 +10,6 @@
 #define PIN6 6
 #define PIN7 7
 
-#define SET 1
-#define RESET 0
 
 // API Function Prototypes
 void GPIO_InputPort(GPIO_RegDef_t *pGPIOx);
