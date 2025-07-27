@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "rees52_uno_gpio.h": "c",
+        "atmega328p.h": "c"
+    }
+}

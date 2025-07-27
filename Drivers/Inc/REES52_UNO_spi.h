@@ -14,7 +14,7 @@
 #define SPI_SCLK_SPEED_DIV2         4
 #define SPI_SCLK_SPEED_DIV8         5
 #define SPI_SCLK_SPEED_DIV32        6
-#define SPI_SCLK_SPEED_DIV64        7
+#define SPI_SCLK_SPEED_DIV64_2X     7
 
 #define SPI_CPOL_HIGH               1
 #define SPI_CPOL_LOW                0
